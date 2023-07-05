@@ -6,16 +6,3 @@
     </span>
   </p>
 </template>
-
-<style>
-#copyright {
-  margin: 100px 0;
-}
-#copyright > span {
-  color: var(--light);
-  font-size: 20px;
-}
-#copyright > span a {
-  color: var(--primary);
-}
-</style>

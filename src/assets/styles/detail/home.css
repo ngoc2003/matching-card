@@ -1,0 +1,90 @@
+.main {
+  padding: 40px 8% 0;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+.main > div {
+  text-align: center;
+}
+.main__title {
+  font-size: var(--font-size-xl);
+  color: var(--light);
+  padding-bottom: 10px;
+}
+.main__description {
+  font-size: 28px;
+  color: var(--light);
+  padding-bottom: 20px;
+}
+.main__actions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+.main__actions button {
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid var(--light);
+  color: var(--light);
+  border-radius: 16px;
+  height: 150px;
+  width: 150px;
+  margin: 0 auto;
+}
+.main__actions button:hover {
+  background-color: var(--light);
+  color: var(--dark);
+}
+.main__actions button span {
+  display: block;
+  font-family: var(--font);
+}
+.main__actions_title {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+.main__actions button span:not(.main__actions_title) {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 650px) {
+  .main__title {
+    font-size: var(--font-size-big);
+  }
+  .main__actions {
+    gap: 20px;
+  }
+  .main__actions button {
+    height: 120px;
+    width: 120px;
+  }
+  .main__description,
+  .main__actions_title {
+    font-size: var(--font-size-small);
+  }
+  .main__actions button span:not(.main__actions_title) {
+    font-size: var(--font-size-tiny);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main__actions {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .main__actions button {
+    height: 150px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 360px) {
+  .main__actions {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .main__actions button {
+    height: 200px;
+    width: 200px;
+  }
+}

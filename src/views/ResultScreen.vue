@@ -14,39 +14,6 @@
   </div>
 </template>
 
-<style>
-.result {
-  margin: 40px 0;
-  height: 100vh;
-}
-.result__container {
-  text-align: center;
-}
-.result__title {
-  font-size: 72px;
-  color: var(--light);
-  margin-bottom: 20px;
-}
-.result__timer {
-  color: var(--light);
-  font-size: 32px;
-  margin-bottom: 30px;
-}
-.result__timer > span {
-  color: var(--primary);
-}
-.result__play-agin-button {
-  font-size: 20px;
-  padding: 16px 24px;
-  background-color: transparent;
-  border: 1px solid var(--light);
-  color: var(--light);
-  font-family: var(--font);
-  border-radius: 8px;
-  cursor: pointer;
-}
-</style>
-
 <script>
 import CopyRight from '@/components/CopyRight.vue'
 

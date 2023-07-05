@@ -12,16 +12,6 @@
     <CopyRight />
   </div>
 </template>
-<style>
-.game-play {
-  height: 100vh;
-}
-.game-play__container {
-  margin-top: 40px;
-  display: inline-grid;
-  gap: 20px;
-}
-</style>
 <script>
 import CardPlay from '@/components/CardPlay.vue'
 import CopyRight from '@/components/CopyRight.vue'

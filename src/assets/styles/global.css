@@ -5,6 +5,12 @@
   --light: #f3f3f3;
 
   --font: 'Odibee Sans', cursive;
+
+  --font-size-xl: 72px;
+  --font-size-big: 60px;
+
+  --font-size-small: 22px;
+  --font-size-tiny: 16px;
 }
 
 * {
